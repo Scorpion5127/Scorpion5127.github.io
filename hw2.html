@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+    <style>
+        .luxem-flag {
+            height: 300px;
+            width: 500px;
+            margin-bottom: 50px;
+            /* Margin for the bottom side */
+        }
+
+        .red {
+            flex: 1;
+            background-color: red;
+        }
+
+        .light-blue {
+            flex: 1;
+            background-color: lightblue;
+        }
+
+        .threevert {
+            height: 100px;
+        }
+
+        #white {
+            flex: 1;
+            background-color: white;
+        }
+
+        .thailand-flag {
+            height: 300px;
+            width: 500px;
+
+            margin-bottom: 50px;
+            /* Margin for the bottom side */
+        }
+
+        .thailand-red {
+            height: 50px;
+            background-color: #B5002D;
+        }
+
+        .thailand-white {
+            height: 50px;
+            background-color: white;
+        }
+
+        .thailand-blue {
+            height: 100px;
+            background-color: #2E2A4C;
+        }
+
+        .romania {
+            display: flex;
+            height: 300px;
+            width: 500px;
+            margin-bottom: 50px;
+            /* Margin for the bottom side */
+        }
+
+        .mexico {
+            display: flex;
+            position: relative;
+            height: 300px;
+            width: 500px;
+            margin-bottom: 50px;
+            /* Margin for the bottom side */
+        }
+
+        .stripe {
+            flex: 1;
+        }
+
+        .stripe.blue {
+            background-color: #002B7F;
+        }
+
+        .stripe.yellow {
+            background-color: #FCD116;
+        }
+
+        .stripe.red {
+            background-color: #CE1126;
+        }
+
+        .stripe.white {
+            background-color: white;
+        }
+
+        .stripe.green {
+            background-color: green;
+        }
+
+        .mexico_sig {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 35%;
+            max-height: 35%;
+        }
+
+        .flag-label {
+            font-size: large;
+            font-weight: bold;
+            color: #333;
+            transition: font-size 0.3s, color 0.3s;
+            margin: 10px;
+            /* Margin applied to all sides */
+            margin-top: 50px;
+            /* Margin for the top side */
+            margin-bottom: 50px;
+            /* Margin for the bottom side */
+
+        }
+
+        .flag-label:hover {
+            font-size: 1.2em;
+            color: #FF7F50;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="flag-label" for="Luxembourg-flag">Luxembourg</label>
+    <div class="luxem-flag">
+        <div class="red threevert"></div>
+        <div class="red threevert" id="white"></div>
+        <div class="light-blue threevert"></div>
+    </div>
+
+    <label class="flag-label" for="thailand-flag">Thailand</label>
+    <div class="thailand-flag">
+        <div class="thailand-red"></div>
+        <div class="thailand-white"></div>
+        <div class="thailand-blue"></div>
+        <div class="thailand-white"></div>
+        <div class="thailand-red"></div>
+    </div>
+
+
+    <label class="flag-label" for="romania-flag">Romania</label>
+    <div class="romania">
+        <div class="stripe blue"></div>
+        <div class="stripe yellow"></div>
+        <div class="stripe red"></div>
+    </div>
+
+    <label class="flag-label" for="mexico-flag">Mexico</label>
+    <div class="mexico">
+        <div><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/1200px-Coat_of_arms_of_Mexico.svg.png"
+                alt="Your Image" class="mexico_sig"></div>
+
+
+        <div class="stripe green"></div>
+        <div class="stripe white"></div>
+        <div class="stripe red"></div>
+
+    </div>
+</body>
+
+</html>
