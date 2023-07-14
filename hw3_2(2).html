@@ -41,7 +41,7 @@
       <div class="col themed-grid-col p-3 d-none d-sm-block">x!</div>
       <div class="col themed-grid-col p-3">(</div>
       <div class="col themed-grid-col p-3">)</div>
-      <div class="col themed-grid-col p-3">%</div>
+      <div class="col themed-grid-col p-3">%*()*()</div>
       <div class="col themed-grid-col p-3">AC</div>
     </div>
     <div class="row text-center ">
@@ -106,7 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .replace(/log/g, 'Math.log')
         .replace(/ln/g, 'Math.log')
         .replace(/EX/g, 'Math.exp')
-        .replace(/\^/g, '**');
+        .replace(/\^/g, '**')
+        .replace(/%/g, '(1/100)');
 
       if (buttonText === '=') {
         try {
